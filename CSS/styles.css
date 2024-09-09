@@ -1,3 +1,11 @@
+:root{
+    --blanco: #ffffff;
+    --negro: #000000;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+}
+
 /*esto va de ley*/
 html{
     font-size: 62.5%;
@@ -5,6 +13,8 @@ html{
 body{
     font-size: 16px;
 }
+/*hasta aqui*/
+
 
 /*el punto es para hacer refencia a clases*/
 .titulo{
@@ -14,4 +24,34 @@ body{
 
 .titulo span{
     font-size: 2rem;
+}
+
+.navegacion-principal{
+    background-color: var(--secundario);
+    /*margen es por fuera y padding es por dentro*/
+    display: flex;/*flexbox esta diseñado para alinear elementos en tus diseños*/
+    /*justify-content para FILAS/ align-items es para COLUMNAS (flex-direction)*/
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 2rem;
+}
+/*al poner el cursor en el hipervinculo*/
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--negro)
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none; /*remueve el estilo subrayado en el texto*/
+    padding: 1rem;
+}
+
+contenedor{
+    width: 120rem; /*1200 pixeles porque 1rem=10px*/
+    margin: 0 auto;
+}
+
+.nav-bg{
+    background-color: var(--secundario);
 }

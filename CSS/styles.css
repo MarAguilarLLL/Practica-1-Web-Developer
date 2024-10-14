@@ -15,6 +15,27 @@ body{
 }
 /*hasta aqui*/
 
+/*Se aplica desde 0 pixeles*/
+body {
+    background-color: bisque;
+}
+
+/*Recomendado
+480 px para moviles
+768 para tablets
+*/
+
+@media (min-width: 480px){
+    body{
+        background-color: blue;
+    }
+}
+
+@media (min-width: 768px){
+    body{
+        background-color: cornflowerblue;
+    }
+}
 
 /*el punto es para hacer refencia a clases*/
 .titulo{
@@ -34,7 +55,17 @@ body{
     justify-content: space-between;
     font-weight: bold;
     font-size: 2rem;
+    flex-direction: column;
+    align-items: center;
 }
+
+@media (min-width: 768px){
+ .navegacion-principal{
+    flex-direction: row;
+    justify-content: space-between;
+ }
+}
+
 /*al poner el cursor en el hipervinculo*/
 .navegacion-principal a:hover{
     background-color: var(--primario);
@@ -48,10 +79,17 @@ body{
 }
 
 contenedor{
-    width: 120rem; /*1200 pixeles porque 1rem=10px*/
+    max-width: 120rem; /*1200 pixeles porque 1rem=10px*/
     margin: 0 auto;
 }
 
 .nav-bg{
     background-color: var(--secundario);
+}
+
+.hero{
+    background-image: url(../img/hero.jpg); /*../ es para regresar un nivel 
+    de directorio ya que la carpeta "img" esta afuera de ""css*/
+    background-repeat: no-repeat ; /*Sirve para evitar la repeticion cuando la imagen es pequeña*/
+    background-size: cover; /*Sirve para cubrir la imagen con todo el tamaño*/
 }

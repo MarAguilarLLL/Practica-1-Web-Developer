@@ -130,3 +130,41 @@ contenedor{
         width: auto;
     }
 }
+
+/*servicios*/
+
+@media (min-width: 768px){
+ .servicios{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr; por fraccion*/
+    /*grid-template-columns: 33.3% 33.3% 33.3%; por porcentaje*/
+    grid-template-columns: repeat(3,1fr);
+    /*Esta propiedad define el area de las comlunas y la funcion repeat, repite 3 veces una fraccion en el grid o cuadrilla*/
+    column-gap: 1rem /*Espacio vacio enre columnas*/
+ }
+}
+
+/*Cnetrar iconos*/
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3{
+        color: var(--secundario);
+        font-weight: normal;
+    }
+    p{
+        text-align: center;
+        line-height: 2;/*Interlineado*/
+    }
+    .iconos{
+        width: 15rem;
+        height: 15rem;
+        background-color: var(--primario);
+        border-radius: 50%; /*lo hace circular*/
+        /*centrar horizontal y veticalmente*/
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}

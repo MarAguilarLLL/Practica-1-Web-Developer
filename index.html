@@ -100,43 +100,45 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, temporibus facilis quasi accusantium animi repellendus dolorum! Nostrum corporis consectetur sed nesciunt beatae, et harum. Tempore ut animi odio aperiam minus!</p>
         </section>
         </div>
-    </main>
 
     <section>
-        <H2>Contacto</H2>
-        <form>
+        <h2>Contacto</h2>
+        <form class="formulario">
             <fieldset>
-                <legend>
-                    Llena tus datos de contacto</legend>
-                    <div>
-                        <label for="Nombre"></label>
+                <legend>Llena tus datos de contacto</legend>
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label>Nombre</label>
                         <input type="text" placeholder="Tu Nombre">
                     </div>
 
-                    <div>
-                        <label for="Telefono"></label>
+                    <div class="campo">
+                        <label>Telefono</label>
                         <input type="tel" placeholder="Tu Teléfono">
                     </div>
 
-                    <div>
-                        <label for="Correo"></label>
+                    <div class="campo">
+                        <label>Correo</label>
                         <input type="email" placeholder="Tu Correo">
                     </div>
 
-                    <div>
-                        <label for="Mensaje"></label>
+                    <div class="campo">
+                        <label>Correo</label>
                         <textarea></textarea>
                     </div>
+                </div>
 
-                    <div>
-                        <input type="submit" value="Enviar">
+                    <div class="alinear-derecha flex">
+                        <input class= "boton w-sm-100" type="submit" value="Enviar">
                     </div>
-
             </fieldset>
         </form>
     </section>
 
-    <footer>
+
+</main>
+
+    <footer class="copyright">
         <p>Todos los derechos reservados © Mario Alberto Aguilar Jiménez 2024</p>
     </footer>
 
